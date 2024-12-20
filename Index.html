@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Number & Punishment Picker</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roll Number & Punishment Picker</h1>
+        <div class="picker-container">
+            <div class="controls">
+                <label class="punishment-toggle">
+                    <input type="checkbox" id="includePunishment">
+                    <span>Include Punishment</span>
+                </label>
+            </div>
+            <div class="display">
+                <span id="number">--</span>
+                <span id="name">Select a Roll Number</span>
+                <span id="punishment" class="punishment-text hidden">Punishment will appear here</span>
+            </div>
+            <button id="pickButton">Pick Random Roll Number</button>
+            <div class="history" id="history">
+                <h3>Previously Picked</h3>
+                <ul id="historyList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
